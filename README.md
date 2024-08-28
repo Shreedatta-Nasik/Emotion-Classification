@@ -20,7 +20,7 @@ offers two versions of physiological signal data: raw and pre-processed. While r
 data. The pre-processed DEAP data comprises 32 channels of EEG signals (at 128Hz) and 8 channels of peripheral physiological signals. The file is present it .dat file the data_process notebook extracts the data from the 
 .dat file and saved it in a seperate .csv files. As there are 32 participants and 40 videos to watch total of 1280 labels are given. While the EEG signals are recorded in mV therefore due to the sampling rate and the 
 63 seconds of the video there are 8064(128x63) data points are available. While pre-processing we discard the first 3 seconds of the data. To reduce this data so that a relationship can be established between the EEG signals
-and the emotions we use feature extraction.
+and the emotions we use feature extraction. The processed data is present in the datasets folder PSD45 is meant for LSTM and SpinalLSTM while PSD is for SpinalNet and MLP. Same nomencluture goes for DE and LFDE
 
 ## Feature Selection
 As most of the EEG channels contain too much noise and redundant information we would like to select the channels that give the best accuracies. By referrring a [research paper](https://www.nature.com/articles/s41598-021-86345-5#:~:text=We%20used%20the%20zero%2Dtime,evaluated%20using%20the%20DEAP%20database.) 
